@@ -1,0 +1,465 @@
+/*  rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+
+/****************************/
+/* BELOW 1552px (Middle desktops) */
+/****************************/
+
+@media (max-width: 97em) {
+  /* img {
+    object-fit: cover;
+  } */
+  .new-arrival-text,
+  .new-arrival-price {
+    font-size: 1.8rem;
+  }
+  .btn-tag:link,
+  .btn-tag:visited {
+    font-size: 1.2rem;
+  }
+  .blog-text {
+    font-size: 1.6rem;
+  }
+  .btn-read-more:link,
+  .btn-read-more:visited {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+  }
+  .blog-content {
+    gap: 2rem;
+  }
+  .blog-footer {
+    padding-top: 2rem;
+  }
+
+  .blog:not(:nth-child(2)) {
+    margin-top: 2rem;
+    padding-top: 2rem;
+  }
+
+  .blog {
+    gap: 2rem;
+  }
+
+  .new-arrival {
+    padding: 2rem;
+  }
+
+  .add-to-cart {
+    font-size: 1.4rem;
+    padding: 0 0 0 1.6rem;
+  }
+
+  .aside {
+    max-width: 20rem;
+  }
+  .btn-aside:link,
+  .btn-aside:visited {
+    color: #ffffff;
+    padding: 0.6rem 2rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 1.8rem;
+  }
+
+  .main-nav {
+    padding-left: 3rem;
+  }
+
+  .section-hero {
+    row-gap: 1.8rem;
+  }
+}
+
+/****************************/
+/* BELOW 1344px (Smaller desktops) */
+/****************************/
+@media (max-width: 84em) {
+  .heading-primary {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .section-hero {
+    row-gap: 1.4rem;
+    column-gap: 1rem;
+  }
+  .main-nav {
+    padding-left: 2rem;
+  }
+
+  .new-arrival-shop-icon {
+    padding: 1.2rem;
+  }
+
+  .add-to-cart {
+    font-size: 1.2rem;
+    padding: 0 0 0 1rem;
+  }
+
+  .new-arrival-price {
+    font-size: 1.6rem;
+  }
+
+  .new-arrival {
+    gap: 1.4rem;
+    padding: 1.6rem;
+  }
+
+  .aside-text,
+  .btn-aside {
+    font-size: 1.4rem;
+    line-height: 3rem;
+  }
+
+  .aside {
+    max-width: 18rem;
+  }
+
+  .blog {
+    gap: 1rem;
+  }
+
+  .tags {
+    gap: 1rem;
+  }
+  .footer {
+    padding: 6.4rem 9rem;
+  }
+}
+
+/****************************/
+/* BELOW 1200px (Landscape Tablets) */
+/****************************/
+
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px */
+    font-size: 56.25%;
+  }
+
+  .footer {
+    padding: 6.4rem 5rem;
+  }
+}
+
+/****************************/
+/* BELOW 1040px (Tablets) */
+/****************************/
+@media (max-width: 65em) {
+  html {
+    /* 8px / 16px */
+    font-size: 50%;
+  }
+
+  .header {
+    padding: 1rem 2.4rem;
+  }
+
+  .main-content {
+    grid-column: 1 / -1;
+    padding: 0 2rem 0 2rem;
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+  }
+
+  .main-content {
+    margin-top: 8.4rem;
+  }
+
+  .header-search-form {
+    display: none;
+  }
+
+  .header-search-icon {
+    display: inline-block;
+  }
+  .new-arrival {
+    max-width: 280px;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 2rem;
+  }
+
+  .aside {
+    padding: 1.6rem;
+    max-width: 23rem;
+  }
+
+  .aside-text,
+  .btn-aside {
+    font-size: 1.6rem;
+    line-height: 233.8%;
+  }
+
+  .section-hero {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    /* column-gap: 2rem;
+    row-gap: 2.8rem; */
+  }
+
+  .hero-big-one {
+    grid-column: span 2;
+  }
+
+  .hero-little-one {
+    height: 100%;
+  }
+
+  .hero-little-one:last-child {
+    display: none;
+  }
+
+  .blog {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* align-items: center; */
+    gap: 3.2rem;
+  }
+
+  .heading-primary {
+    font-size: 3.6rem;
+    line-height: 4.4rem;
+  }
+
+  .tags {
+    gap: 2rem;
+  }
+
+  .btn-tag:link,
+  .btn-tag:visited {
+    font-size: 1.6rem;
+  }
+
+  .blog-text {
+    font-size: 2rem;
+  }
+
+  .btn-read-more:link,
+  .btn-read-more:visited {
+    font-size: 1.6rem;
+    margin-top: 3.2rem;
+  }
+
+  .btn-subscribe {
+    font-size: 1.4rem;
+  }
+
+  .nav-col .footer-heading {
+    font-size: 1.6rem;
+  }
+
+  .footer-link {
+    font-size: 1.6rem;
+  }
+
+  .footer-nav {
+    margin-top: 1.6rem;
+    gap: 1.6rem;
+  }
+
+  .container--footer {
+    grid-template-columns: 1.5fr 1fr 1.5fr 1.5fr;
+    gap: 5rem;
+  }
+
+  .new-arrival {
+    gap: 2.4rem;
+    padding: 2.4rem;
+  }
+  .new-arrivals-box {
+    display: none;
+  }
+
+  .new-arrivals-box.arrivals-mobile {
+    display: grid;
+  }
+
+  .new-arrival-text,
+  .new-arrival-price {
+    font-size: 2.4rem;
+  }
+
+  .add-to-cart {
+    font-size: 1.6rem;
+    padding: 0 0.5rem 0 1.6rem;
+  }
+
+  .new-arrival-shop-icon {
+    padding: 1.6rem;
+  }
+  /* MOBILE NAVIGATION */
+
+  .btn-mobile-nav {
+    display: inline-block;
+    z-index: 9999;
+  }
+
+  .btn-mobile-nav:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  .main-nav {
+    padding-left: 4.8rem;
+  }
+
+  .left-header-container {
+    position: fixed;
+    top: 72px;
+    left: 0;
+    width: 325px;
+    height: 100%;
+    transform: translateX(-100%);
+
+    transition: all 0.5s ease-in;
+    padding-bottom: 10rem;
+    /* Hide navigation */
+    /* Allows NO transitions at all */
+    /* display: none; */
+    overflow-y: auto;
+    /* 1) Hide it visually */
+    opacity: 0;
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+    /* #) Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  /* .nav-open .left-header {
+    display: inline-block;
+    width: 17%;
+    background-color: rgba(24, 26, 29, 0.989);
+    padding: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 999;
+    overflow-y: auto;
+  } */
+
+  .nav-open .left-header-container {
+    opacity: 0.95;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+    z-index: 99999;
+  }
+
+  .nav-open .close {
+    display: block;
+  }
+
+  .nav-open .open {
+    display: none;
+  }
+
+  .main-nav-border {
+    display: none;
+  }
+
+  .active .main-nav-border {
+    display: none;
+  }
+
+  .main-nav-list li:hover .main-nav-border {
+    display: none;
+  }
+}
+
+/****************************/
+/* BELOW 784px (Smaller Tablets) */
+/****************************/
+
+@media (max-width: 49em) {
+  .logo-box {
+    width: auto;
+  }
+
+  .logo-text {
+    display: none;
+  }
+
+  .header-content {
+    display: none;
+  }
+
+  .mobile-header-down-arrow {
+    display: inline-block;
+  }
+
+  .btn-mobile-nav {
+    margin-right: 0;
+  }
+
+  .container--footer {
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+  }
+  .footer {
+    padding: 6.4rem 2rem;
+    margin: 0 auto;
+  }
+
+  .copyright {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+  }
+}
+
+/****************************/
+/* BELOW 544px (Phones) */
+/****************************/
+
+@media (max-width: 34em) {
+  .section-hero {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .heading-secondary {
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+  }
+
+  .new-arrivals-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.6rem;
+  }
+
+  .heading-primary {
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+  }
+
+  .tags {
+    flex-wrap: wrap;
+  }
+
+  .container--footer {
+    gap: 2rem;
+  }
+
+  .logo-col {
+    grid-column: 1 / -1;
+  }
+
+  .nav-two-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: span 2;
+    gap: 2rem;
+  }
+
+  .copyright {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+}

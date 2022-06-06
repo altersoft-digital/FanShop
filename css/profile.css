@@ -1,0 +1,191 @@
+/****************************/
+/* PRoFILE PAGE STYLE */
+/****************************/
+.section-profile {
+  margin-top: 4rem;
+  padding-left: 1.2rem;
+  padding-bottom: 2rem;
+}
+
+.profile-nav {
+  margin-top: 4.8rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.profile-nav-list {
+  list-style: none;
+
+  /* display: flex;
+  align-items: center;
+  gap: 5.6rem; */
+  display: flex;
+  justify-content: space-between;
+  max-width: 60rem;
+}
+
+.profile-link:link,
+.profile-link:visited {
+  display: inline-block;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: rgba(255, 255, 255, 0.4);
+  padding: 2rem;
+  margin-bottom: auto;
+  transition: all 0.4s;
+}
+.profile-nav-list li {
+  position: relative;
+  padding: 0 1rem;
+  transition: all 0.4s;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+}
+
+.profile-nav-border {
+  position: absolute;
+  bottom: -1px;
+  right: 50%;
+  transform: translateX(50%);
+  display: none;
+  border: 2px solid #ca003d;
+  background-color: #ca003d;
+  border-radius: 4px 4px 0px 0px;
+  width: 100%;
+  transition: all 0.4s;
+  /* width: 5.2rem; */
+}
+
+.profile-nav-list li:hover .profile-nav-border {
+  display: inline-block;
+}
+
+.profile-nav-list li:hover .profile-link {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.active--profile .profile-nav-border {
+  display: inline-block;
+}
+
+.active--profile .profile-link {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/****************************/
+/* ORDERS SECTION */
+/****************************/
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+td {
+  text-align: left;
+  padding: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+td:nth-child(4) {
+  width: 11rem;
+}
+
+/* td:not(:first-child) {
+  margin-left: auto;
+} */
+
+tr {
+  width: 100%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  margin-top: 2rem;
+  background-color: #181a1d;
+  border-radius: 1.2rem;
+
+  /* padding: 3.4rem 2.4rem; */
+  transition: all 0.4s;
+}
+
+tr:hover {
+  transform: translateY(-3px);
+  /* background-color: rgba(24, 26, 29, 0.2); */
+}
+
+/* tbody {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+} */
+
+.order-status--completed {
+  color: rgba(30, 168, 127, 0.7);
+}
+
+.order-status--failed {
+  color: rgba(202, 0, 61, 0.7);
+}
+
+.order-status--pending {
+  color: rgba(250, 163, 0, 0.7);
+}
+
+.btn-view-order:link,
+.btn-view-order:visited {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 233.8%;
+  color: #ffffff;
+  background-color: #ca003d;
+  border-radius: 1.2rem;
+  padding: 4px 2.4rem;
+  transition: all 0.3s;
+}
+
+.btn-view-order:hover,
+.btn-view-order:active {
+  background-color: rgba(202, 0, 61, 0.6);
+}
+
+/****************************/
+/* SHIPPING ADDRESS SECTION */
+/****************************/
+
+.section-profile .checkout-form {
+  margin-top: 2.4rem;
+  border: none;
+}
+
+.btn-address {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 233.8%;
+  color: #ffffff;
+  padding: 1rem 2.4rem;
+  background: #ca003d;
+  border-radius: 1.2rem;
+  grid-column: -2 / -1;
+  margin-left: auto;
+  width: 30%;
+}
+
+/****************************/
+/* ACCOUNT DETAILS SECTION */
+/****************************/
+.change-password-box {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.change-password-box .heading-tertiary {
+  grid-column: 1 / -1;
+}

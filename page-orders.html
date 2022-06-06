@@ -12,7 +12,7 @@
     />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/national-team.css" />
+    <link rel="stylesheet" href="css/profile.css" />
     <!-- <link rel="stylesheet" href="css/queries.css" /> -->
     <title>GGF Fan Shop - ოფიცალური</title>
   </head>
@@ -67,9 +67,7 @@
 
               <span class="header-nav-border"></span>
             </a>
-            <a
-              href="page-shopping-cart.html"
-              class="header-nav header-nav--active"
+            <a href="page-shopping-cart.html" class="header-nav"
               ><img
                 class="header-nav-icon header-nav-icon-norm"
                 src="img/shopping-cart-icon.svg"
@@ -82,10 +80,15 @@
               />
               <span class="header-nav-border"></span>
             </a>
-            <a href="#" class="header-nav"
-              ><img
-                class="header-nav-icon"
+            <a href="page-orders.html" class="header-nav header-nav--active">
+              <img
+                class="header-nav-icon header-nav-icon-norm"
                 src="img/profile-icon.svg"
+                alt="Profile icon"
+              />
+              <img
+                class="header-nav-icon header-nav-icon-red"
+                src="img/profile-icon-red.svg"
                 alt="Profile icon"
               />
               <span class="header-nav-border"></span>
@@ -96,9 +99,9 @@
       <div class="left-header">
         <nav class="main-nav">
           <ul class="main-nav-list">
-            <li class="active">
+            <li>
               <a class="main-nav-link" href="index.html">
-                <img src="img/house-icon.svg" alt="Home active icon" />
+                <img src="img/house-icon-normal.svg" alt="Home active icon" />
                 <span>Home</span>
               </a>
               <span class="main-nav-border"></span>
@@ -172,37 +175,102 @@
         </aside>
       </div>
       <div class="main-content">
-        <section class="section-blog">
-          <img src="./img/hero-img.png" alt="Blog Image" class="blog-img" />
-          <div class="blog-content">
-            <h1 class="heading-primary">
-              New Special Edition 2023 collection arriving soon 20% OFF if you
-              PRE-ORDER now
-            </h1>
-            <div class="tags">
-              <a href="#" class="btn-tag blog-date">21.05.2022 - 15:30</a>
-              <a href="#" class="btn-tag">New Arrivals</a>
-              <a href="#" class="btn-tag">FANSHOP Merch</a>
-              <a href="#" class="btn-tag">2023</a>
-            </div>
-            <div class="blog-footer">
-              <p class="blog-text">
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form, by
-                injected humour, or randomised words which don't look even
-                slightly believable. If you are going to use a passage of Lorem
-                Ipsum, you need to be sure there isn't anything embarrassing
-                hidden in the middle of text. All the Lorem Ipsum generators on
-                the Internet tend to repeat predefined chunks as necessary,
-                making this the first true generator on the Internet.
-              </p>
-              <a href="#" class="btn-read-more">PRE-ORDER</a>
-            </div>
-            <a href="#" class="back-to-home-box">
-              <img src="./img/left-arrow-icon.svg" alt="Left arrow icon" />
-              <span>Back to Home</span>
-            </a>
+        <section class="section-profile">
+          <div class="profile-header">
+            <h1 class="heading-primary">Hello David</h1>
+            <nav class="profile-nav">
+              <ul class="profile-nav-list">
+                <li class="active--profile">
+                  <a href="page-orders.html" class="profile-link">Orders</a>
+                  <span class="profile-nav-border"></span>
+                </li>
+                <li>
+                  <a href="page-address.html" class="profile-link"
+                    >Shipping Address</a
+                  >
+                  <span class="profile-nav-border"></span>
+                </li>
+                <li>
+                  <a href="page-account-details.html" class="profile-link"
+                    >Account Details</a
+                  >
+                  <span class="profile-nav-border"></span>
+                </li>
+              </ul>
+            </nav>
           </div>
+          <table>
+            <!-- table row -->
+            <!-- <thead>
+                <tr>
+                  <th>Chair</th>
+                  <th>The Laid Back</th>
+                  <th>The Worker Bee</th>
+                  <th>The Chair 4/2</th>
+                </tr>
+              </thead> -->
+
+            <tbody>
+              <tr>
+                <!-- tabel data -->
+                <td>#7924</td>
+                <td>November 19, 2021</td>
+                <td>190.00 ₾ for 5 items</td>
+                <td><span class="order-status--completed">Completed</span></td>
+                <td><a href="#" class="btn btn-view-order">View</a></td>
+              </tr>
+              <tr>
+                <td>#7924</td>
+                <td>November 19, 2021</td>
+                <td>190.00 ₾ for 5 items</td>
+                <td><span class="order-status--failed">Failed</span></td>
+                <td><a href="#" class="btn btn-view-order">View</a></td>
+              </tr>
+              <tr>
+                <td>#7924</td>
+                <td>November 19, 2021</td>
+                <td>190.00 ₾ for 5 items</td>
+                <td><span class="order-status--pending">Pending</span></td>
+                <td><a href="#" class="btn btn-view-order">View</a></td>
+              </tr>
+              <tr>
+                <td>#7924</td>
+                <td>November 19, 2021</td>
+                <td>190.00 ₾ for 5 items</td>
+                <td><span class="order-status--completed">Completed</span></td>
+                <td><a href="#" class="btn btn-view-order">View</a></td>
+              </tr>
+              <tr>
+                <!-- tabel data -->
+                <td>#7924</td>
+                <td>November 19, 2021</td>
+                <td>190.00 ₾ for 5 items</td>
+                <td><span class="order-status--completed">Completed</span></td>
+                <td><a href="#" class="btn btn-view-order">View</a></td>
+              </tr>
+              <tr>
+                <td>#7924</td>
+                <td>November 19, 2021</td>
+                <td>190.00 ₾ for 5 items</td>
+                <td><span class="order-status--completed">Completed</span></td>
+                <td><a href="#" class="btn btn-view-order">View</a></td>
+              </tr>
+              <tr>
+                <td>#7924</td>
+                <td>November 19, 2021</td>
+                <td>190.00 ₾ for 5 items</td>
+                <td><span class="order-status--completed">Completed</span></td>
+                <td><a href="#" class="btn btn-view-order">View</a></td>
+              </tr>
+              <tr>
+                <td>#7924</td>
+                <td>November 19, 2021</td>
+                <td>190.00 ₾ for 5 items</td>
+                <td><span class="order-status--completed">Completed</span></td>
+                <td><a href="#" class="btn btn-view-order">View</a></td>
+              </tr>
+            </tbody>
+          </table>
         </section>
       </div>
     </main>
