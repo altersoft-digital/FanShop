@@ -175,7 +175,7 @@
 }
 
 @media (min-width: 65em) {
-  .sticky .left-header {
+  .sticky .left-header-container {
     width: 17%;
     background-color: rgba(24, 26, 29, 0.989);
     padding: 0;
@@ -184,6 +184,20 @@
     bottom: 0;
     z-index: 999;
     overflow-y: auto;
+    margin-top: 70px;
+  }
+
+  /* .sticky footer {
+    margin-top: 12.8rem;
+  } */
+
+  /* .sticky .aside,
+  .sticky .main-nav {
+    margin: 0;
+  } */
+
+  .section-single-product {
+    margin-bottom: 29rem !important;
   }
 }
 
@@ -299,6 +313,7 @@
   flex-direction: column;
   align-items: center;
   gap: 1.2rem;
+  margin-bottom: 2rem;
 }
 
 .aside-text--fff {
@@ -624,6 +639,7 @@
   justify-content: center;
 
   margin-top: 14.8rem;
+  margin-bottom: 7rem;
 }
 
 .welcome-heading {
@@ -634,7 +650,7 @@
 }
 
 .welcome-form {
-  margin-top: 9rem;
+  margin-top: 4.8rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -654,7 +670,7 @@ input[type="password"],
 }
 
 .welcome-sub {
-  margin-top: 4.2rem;
+  margin-top: 2.4rem;
 }
 
 .welcome-sub a {
@@ -832,4 +848,10 @@ input[type="checkbox"] {
   font-size: 2rem;
   line-height: 2.4rem;
   color: rgba(255, 255, 255, 0.7);
+}
+
+/* single product page */
+
+.number-input {
+  display: none;
 }

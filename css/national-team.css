@@ -77,6 +77,10 @@
   border-radius: 4px 4px 0 0;
 }
 
+.section-national-team {
+  margin-bottom: 2rem;
+}
+
 /****************************/
 /* SINGLE PRODUCT PAGE STYLES */
 /****************************/
@@ -320,7 +324,7 @@
 }
 
 .shopping-cart-item img {
-  width: 25%;
+  width: 35%;
   height: 100%;
 }
 
@@ -412,9 +416,19 @@
   background-color: rgba(202, 0, 61, 0.8);
 }
 
+/* mobile */
+.shopping-cart-item-footer--mobile,
+.wishlist-item-footer.wishlist-item-footer--mobile {
+  display: none;
+}
+
 /****************************/
 /* Wishlist PAGE STYLES */
 /****************************/
+
+.section-wishlist {
+  margin-bottom: 2rem;
+}
 
 .btn-wishlist-item {
   padding: 0 2.4rem;

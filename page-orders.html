@@ -13,16 +13,34 @@
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/profile.css" />
-    <!-- <link rel="stylesheet" href="css/queries.css" /> -->
+    <link rel="stylesheet" href="css/queries.css" />
     <title>GGF Fan Shop - ოფიცალური</title>
   </head>
   <body>
     <main class="main">
       <header class="header">
-        <a href="#">
-          <img class="logo" alt="GGF logo" src="img/logo.png" />
+        <button class="btn-mobile-nav">
+          <img
+            class="icon-mobile-nav open"
+            src="./img/mobile-nav-open-icon.svg"
+            alt="Mobile nav open icon"
+          />
+          <img
+            class="icon-mobile-nav close"
+            src="./img/mobile-nav-close-icon.svg"
+            alt="Mobile nav close icon"
+          />
+        </button>
+        <a href="#" class="logo-box">
+          <img class="logo" alt="GGF logo" src="./img/GFF-logo-only.svg" />
+          <p class="logo-text">
+            GEORGIAN NATIONAL TEAMS<br />OFFICIAL FAN SHOP
+          </p>
         </a>
         <div class="header-content">
+          <div class="header-search-icon">
+            <img src="./img/search-icon.svg" alt="search icon" />
+          </div>
           <form action="#" class="header-search-form">
             <input type="text" placeholder="Search" />
           </form>
@@ -67,7 +85,9 @@
 
               <span class="header-nav-border"></span>
             </a>
-            <a href="page-shopping-cart.html" class="header-nav"
+            <a
+              href="page-shopping-cart.html"
+              class="header-nav header-nav--active"
               ><img
                 class="header-nav-icon header-nav-icon-norm"
                 src="img/shopping-cart-icon.svg"
@@ -80,99 +100,105 @@
               />
               <span class="header-nav-border"></span>
             </a>
-            <a href="page-orders.html" class="header-nav header-nav--active">
-              <img
-                class="header-nav-icon header-nav-icon-norm"
+            <a href="#" class="header-nav"
+              ><img
+                class="header-nav-icon"
                 src="img/profile-icon.svg"
-                alt="Profile icon"
-              />
-              <img
-                class="header-nav-icon header-nav-icon-red"
-                src="img/profile-icon-red.svg"
                 alt="Profile icon"
               />
               <span class="header-nav-border"></span>
             </a>
           </div>
         </div>
+        <div class="mobile-header-down-arrow">
+          <img
+            src="./img/direction-down-arrow.svg"
+            alt="Direction down arrow icon"
+          />
+        </div>
       </header>
-      <div class="left-header">
-        <nav class="main-nav">
-          <ul class="main-nav-list">
-            <li>
-              <a class="main-nav-link" href="index.html">
-                <img src="img/house-icon-normal.svg" alt="Home active icon" />
-                <span>Home</span>
-              </a>
-              <span class="main-nav-border"></span>
-            </li>
-            <li>
-              <a class="main-nav-link" href="archive-national-team.html">
-                <img
-                  src="img/team-icon.svg"
-                  alt="Team icon"
-                  class="nav-icon-norm"
-                />
-                <img
-                  src="img/team-icon-red.svg"
-                  alt="Team icon"
-                  class="nav-icon-red"
-                />
-                <span>National Team</span>
-              </a>
-              <span class="main-nav-border"></span>
-            </li>
-            <li>
-              <a class="main-nav-link" href="#">
-                <img src="img/clothes-icon.svg" alt="Clothes icon" />
-                <span>Clothes</span>
-              </a>
-              <span class="main-nav-border"></span>
-            </li>
-            <li>
-              <a class="main-nav-link" href="#">
-                <img src="img/sport-bag-icon.svg" alt="Sport bag icon" />
-                <span>Accesories</span>
-              </a>
-              <span class="main-nav-border"></span>
-            </li>
-            <li>
-              <a class="main-nav-link" href="#">
-                <img src="img/baby-clothes-icon.svg" alt="Baby clothes icon" />
-                <span>Kids</span>
-              </a>
-              <span class="main-nav-border"></span>
-            </li>
-            <li>
-              <a class="main-nav-link" href="#">
-                <img src="img/pencil-icon.svg" alt="Pencil icon" />
-                <span>School</span>
-              </a>
-              <span class="main-nav-border"></span>
-            </li>
-            <li>
-              <a class="main-nav-link" href="#">
-                <img src="img/brochure-icon.svg" alt="Brochure icon" />
-                <span>Match Programme</span>
-              </a>
-              <span class="main-nav-border"></span>
-            </li>
-            <li>
-              <a class="main-nav-link" href="#">
-                <img src="img/fine-arts-icon.svg" alt="Fine arts icon" />
-                <span>GFF By Gameza</span>
-              </a>
-              <span class="main-nav-border"></span>
-            </li>
-          </ul>
-        </nav>
-        <aside class="aside">
-          <p class="aside-text">
-            <span class="aside-text--fff">Send to your friends</span> 50, 100,
-            200, 500 GEL GIFT CARDS
-          </p>
-          <a href="#" class="btn btn-aside">Buy voucher</a>
-        </aside>
+      <div class="left-header-container">
+        <div class="left-header">
+          <nav class="main-nav">
+            <ul class="main-nav-list">
+              <li class="active">
+                <a class="main-nav-link" href="index.html">
+                  <img src="img/house-icon.svg" alt="Home active icon" />
+                  <span>Home</span>
+                </a>
+                <span class="main-nav-border"></span>
+              </li>
+              <li>
+                <a class="main-nav-link" href="archive-national-team.html">
+                  <img
+                    src="img/team-icon.svg"
+                    alt="Team icon"
+                    class="nav-icon-norm"
+                  />
+                  <img
+                    src="img/team-icon-red.svg"
+                    alt="Team icon"
+                    class="nav-icon-red"
+                  />
+                  <span>National Team</span>
+                </a>
+                <span class="main-nav-border"></span>
+              </li>
+              <li>
+                <a class="main-nav-link" href="#">
+                  <img src="img/clothes-icon.svg" alt="Clothes icon" />
+                  <span>Clothes</span>
+                </a>
+                <span class="main-nav-border"></span>
+              </li>
+              <li>
+                <a class="main-nav-link" href="#">
+                  <img src="img/sport-bag-icon.svg" alt="Sport bag icon" />
+                  <span>Accesories</span>
+                </a>
+                <span class="main-nav-border"></span>
+              </li>
+              <li>
+                <a class="main-nav-link" href="#">
+                  <img
+                    src="img/baby-clothes-icon.svg"
+                    alt="Baby clothes icon"
+                  />
+                  <span>Kids</span>
+                </a>
+                <span class="main-nav-border"></span>
+              </li>
+              <li>
+                <a class="main-nav-link" href="#">
+                  <img src="img/pencil-icon.svg" alt="Pencil icon" />
+                  <span>School</span>
+                </a>
+                <span class="main-nav-border"></span>
+              </li>
+              <li>
+                <a class="main-nav-link" href="#">
+                  <img src="img/brochure-icon.svg" alt="Brochure icon" />
+                  <span>Match Programme</span>
+                </a>
+                <span class="main-nav-border"></span>
+              </li>
+              <li>
+                <a class="main-nav-link" href="#">
+                  <img src="img/fine-arts-icon.svg" alt="Fine arts icon" />
+                  <span>GFF By Gameza</span>
+                </a>
+                <span class="main-nav-border"></span>
+              </li>
+            </ul>
+          </nav>
+          <aside class="aside">
+            <p class="aside-text">
+              <span class="aside-text--fff">Send to your friends</span> 50, 100,
+              200, 500 GEL GIFT CARDS
+            </p>
+            <a href="#" class="btn btn-aside">Buy voucher</a>
+          </aside>
+        </div>
       </div>
       <div class="main-content">
         <section class="section-profile">
@@ -274,5 +300,6 @@
         </section>
       </div>
     </main>
+    <script src="./js/script.js"></script>
   </body>
 </html>
