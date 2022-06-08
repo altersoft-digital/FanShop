@@ -525,6 +525,7 @@
   }
 
   .left-header-container {
+    z-index: 999999999;
     position: fixed;
     top: 72px;
     left: 0;
@@ -828,6 +829,72 @@
   .btn-wishlist-item:nth-child(2) {
     border-right: 1px solid rgba(255, 255, 255, 0.1);
     padding-right: 1.4rem;
+  }
+
+  /* orders */
+
+  .orders-table {
+    display: none;
+  }
+
+  .orders-table {
+    display: none;
+  }
+  .orders-table--mobile {
+    display: table;
+    font-size: 1.6rem;
+  }
+
+  tr {
+    margin-top: 1.6rem;
+  }
+
+  td {
+    padding: 1.4rem;
+  }
+
+  .table-status-icon {
+    padding: 4px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 4px;
+  }
+
+  .icon--green {
+    background-color: rgba(30, 168, 127, 0.1);
+  }
+
+  .icon--yellow {
+    background-color: rgba(250, 163, 0, 0.1);
+  }
+
+  .icon--red {
+    background-color: rgba(209, 31, 60, 0.1);
+  }
+
+  .table-status-icon img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .profile-link:link,
+  .profile-link:visited {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    padding: 0;
+    padding-bottom: 1.6rem;
+    margin-bottom: auto;
+    transition: all 0.4s;
+  }
+
+  .profile-nav-list li {
+    padding: 0;
+  }
+
+  .section-profile .heading-primary {
+    text-align: center;
   }
 }
 

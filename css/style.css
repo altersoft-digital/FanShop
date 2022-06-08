@@ -176,7 +176,7 @@
 
 @media (min-width: 65em) {
   .sticky .left-header-container {
-    width: 17%;
+    width: 16.67%;
     background-color: rgba(24, 26, 29, 0.989);
     padding: 0;
     position: fixed;
@@ -547,9 +547,9 @@
 
 .blog {
   display: grid;
-  grid-template-columns: 45fr 50fr;
+  grid-template-columns: 1fr 1fr;
   /* align-items: center; */
-  gap: 4.4rem;
+  gap: 2.4rem;
 }
 
 .blog:not(:nth-child(2)) {

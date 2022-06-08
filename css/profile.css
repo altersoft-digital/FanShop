@@ -147,11 +147,16 @@ tr:hover {
   border-radius: 1.2rem;
   padding: 4px 2.4rem;
   transition: all 0.3s;
+  margin-right: 1rem;
 }
 
 .btn-view-order:hover,
 .btn-view-order:active {
   background-color: rgba(202, 0, 61, 0.6);
+}
+
+.orders-table--mobile {
+  display: none;
 }
 
 /****************************/
