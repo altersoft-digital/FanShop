@@ -236,6 +236,12 @@
   grid-column: span 3;
 }
 
+/* mobile */
+
+/* .single-product-imgs-mobile {
+  display: none;
+} */
+
 /****************************/
 /* SINGLE POST PAGE STYLES */
 /****************************/

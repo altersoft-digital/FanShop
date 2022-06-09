@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/national-team.css" />
@@ -209,6 +213,47 @@
               class="big-one"
             />
           </div>
+          <div class="swiper mySwiper single-product-imgs-mobile">
+            <div class="swiper-wrapper">
+              <div
+                class="single-product-img swiper-slide single-product-img--mobile"
+              >
+                <img
+                  src="./img/product-img-3.png"
+                  alt="Single product image"
+                  class="big-one"
+                />
+              </div>
+              <div
+                class="single-product-img single-product-img--mobile swiper-slide"
+              >
+                <img
+                  src="./img/product-img.png"
+                  alt="Single product image"
+                  class="big-one"
+                />
+              </div>
+              <div
+                class="single-product-img single-product-img--mobile swiper-slide"
+              >
+                <img
+                  src="./img/product-img.png"
+                  alt="Single product image"
+                  class="big-one"
+                />
+              </div>
+              <div
+                class="single-product-img single-product-img--mobile swiper-slide"
+              >
+                <img
+                  src="./img/product-img.png"
+                  alt="Single product image"
+                  class="big-one"
+                />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
           <div class="single-product-right">
             <p class="single-product-name">National Team Hoodie 12 Number</p>
             <p class="heading-tertiary">
@@ -394,6 +439,17 @@
         </p>
       </div>
     </main>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
     <script src="./js/script.js"></script>
   </body>
 </html>

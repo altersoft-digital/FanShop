@@ -441,6 +441,7 @@
               />
             </div>
           </div>
+          <div class="swiper-pagination"></div>
         </section>
         <section class="section-new-arrivals swiper mySwiper">
           <div class="new-arrivals-header">
@@ -657,6 +658,7 @@
               />
             </div>
           </div>
+          <div class="swiper-pagination"></div>
         </section>
         <section class="section-blog">
           <h2 class="heading-secondary heading-blog">Latest Blog Posts</h2>
@@ -870,16 +872,28 @@
         var swiper = new Swiper(".mySwiper", {
           slidesPerView: 1,
           spaceBetween: 0,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
         });
       } else if (window.screen.availWidth <= 784) {
         var swiper = new Swiper(".mySwiper", {
           slidesPerView: 2,
           spaceBetween: 0,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
         });
       } else if (window.screen.availWidth > 784) {
         var swiper = new Swiper(".mySwiper", {
           slidesPerView: 3,
           spaceBetween: 0,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
         });
       }
     </script>
