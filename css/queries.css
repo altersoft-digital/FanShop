@@ -651,6 +651,17 @@
   .checkbox {
     align-self: center;
   }
+
+  .change-password-box {
+    grid-template-columns: 1fr;
+    /* gap: 2rem; */
+  }
+
+  .btn-address {
+    grid-column: 1 / 2;
+    margin-right: auto;
+    margin-left: 0;
+  }
 }
 
 /****************************/
@@ -1191,5 +1202,13 @@
   .welcome-heading {
     font-size: 3.2rem;
     line-height: 3.8rem;
+  }
+
+  /* address page */
+
+  .btn-address {
+    width: auto;
+    justify-self: center;
+    margin: 0;
   }
 }
